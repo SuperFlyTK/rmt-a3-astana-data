@@ -1,0 +1,117 @@
+file,column,type,unit,description
+routes.csv,route_id,string,identifier,Directed route identifier joining routes.csv; reverse directions have different identifiers.
+routes.csv,name,string,,Route label describing the two public endpoint vicinities.
+routes.csv,origin_lat,number,decimal degrees,Origin latitude in WGS84 from the linked OpenStreetMap node.
+routes.csv,origin_lon,number,decimal degrees,Origin longitude in WGS84 from the linked OpenStreetMap node.
+routes.csv,destination_lat,number,decimal degrees,Destination latitude in WGS84 from the linked OpenStreetMap node.
+routes.csv,destination_lon,number,decimal degrees,Destination longitude in WGS84 from the linked OpenStreetMap node.
+routes.csv,expected_length_m,number,metres,Straight-line spherical haversine lower bound using Earth radius 6371008.8 m; not an observed or predicted road-route length.
+routes.csv,expected_length_basis,string,,Original formula description for expected_length_m.
+routes.csv,origin_source,URL,,Public OpenStreetMap node source for the origin coordinate.
+routes.csv,destination_source,URL,,Public OpenStreetMap node source for the destination coordinate.
+ors_observations.csv,timestamp_utc,datetime,ISO 8601 UTC,"Original API request start, with timezone offset."
+ors_observations.csv,timestamp_astana,datetime,ISO 8601 UTC+05:00,Request start in Astana time; original for ORS and converted from timestamp_utc for Google status.
+ors_observations.csv,cycle_id,string,identifier,Original collection batch identifier; retain for provenance and repeated-route grouping.
+ors_observations.csv,route_id,string,identifier,Directed route identifier joining routes.csv; reverse directions have different identifiers.
+ors_observations.csv,provider,category,,"ors or google_demo, exactly as recorded by the collector."
+ors_observations.csv,duration_s,number,seconds,ORS estimated driving duration returned by the API; ORS supplies no live-traffic model in this study.
+ors_observations.csv,duration_no_traffic_s,number or empty,seconds,Optional separate traffic-off baseline; empty for ORS because no separate baseline was returned. Empty does not mean zero.
+ors_observations.csv,distance_m,number,metres,ORS routed distance returned by the API.
+ors_observations.csv,status,category,,"API result: ok, http_error, transport_error, or invalid_response; retained failures remain visible."
+ors_observations.csv,http_code,integer or empty,HTTP status,Original HTTP response code; empty if no response code was available.
+ors_observations.csv,error,string or empty,,Recorded request error description; empty on success.
+ors_observations.csv,request_id,string,identifier,Original collector request identifier; joins raw and processed ORS rows.
+ors_observations.csv,latency_s,number or empty,seconds,Elapsed API request time measured by the collector.
+ors_observations.csv,phase,category,,pilot and scheduled identify the main ORS series; exploratory identifies the initial Google comparison; followup identifies planned Google-ORS windows. manual is reserved for a recorded manual trigger.
+ors_processed.csv,timestamp_utc,datetime,ISO 8601 UTC,"Original API request start, with timezone offset."
+ors_processed.csv,timestamp_astana,datetime,ISO 8601 UTC+05:00,Request start in Astana time; original for ORS and converted from timestamp_utc for Google status.
+ors_processed.csv,cycle_id,string,identifier,Original collection batch identifier; retain for provenance and repeated-route grouping.
+ors_processed.csv,route_id,string,identifier,Directed route identifier joining routes.csv; reverse directions have different identifiers.
+ors_processed.csv,provider,category,,"ors or google_demo, exactly as recorded by the collector."
+ors_processed.csv,duration_s,number,seconds,ORS estimated driving duration returned by the API; ORS supplies no live-traffic model in this study.
+ors_processed.csv,duration_no_traffic_s,number or empty,seconds,Optional separate traffic-off baseline; empty for ORS because no separate baseline was returned. Empty does not mean zero.
+ors_processed.csv,distance_m,number,metres,ORS routed distance returned by the API.
+ors_processed.csv,status,category,,"API result: ok, http_error, transport_error, or invalid_response; retained failures remain visible."
+ors_processed.csv,http_code,integer or empty,HTTP status,Original HTTP response code; empty if no response code was available.
+ors_processed.csv,error,string or empty,,Recorded request error description; empty on success.
+ors_processed.csv,request_id,string,identifier,Original collector request identifier; joins raw and processed ORS rows.
+ors_processed.csv,latency_s,number or empty,seconds,Elapsed API request time measured by the collector.
+ors_processed.csv,phase,category,,pilot and scheduled identify the main ORS series; exploratory identifies the initial Google comparison; followup identifies planned Google-ORS windows. manual is reserved for a recorded manual trigger.
+ors_processed.csv,period,category,local time window,"peak [17:30,19:30); offpeak [10:00,12:00) or [22:00,24:00); other otherwise. Endpoints are exclusive; timezone UTC+05:00."
+ors_processed.csv,date_astana,date,YYYY-MM-DD,Local date calculated from timestamp_utc at UTC+05:00; source CSV filenames may use the UTC date.
+ors_processed.csv,speed_kmh,number or empty,km/h,distance_m / duration_s * 3.6 when both values are positive and finite.
+ors_processed.csv,usable,boolean,true/false,"Passes timestamp, provider, identity, phase, request-success, positive finite duration/distance, speed 2..200 km/h inclusive, nonnegative finite latency if present, and duplicate checks. Does not establish travel-time accuracy."
+ors_processed.csv,exclusion_reason,string or empty,semicolon-separated codes,Validation flags: exact_duplicate; conflicting_duplicate_identity; duplicate_request_id; invalid_timestamp; timestamp_disagreement (over one second); unknown_provider; missing_identity; unknown_phase; request_failed; invalid_duration; invalid_distance; speed_outside_2_200_kmh; invalid_latency. Empty means no exclusions.
+ors_processed.csv,duplicate_kind,category or empty,,exact for repeated original raw fields; conflicting_identity for repeated phase/cycle/route/provider among nonexact rows; empty otherwise. Repeated request_id also creates an exclusion.
+google_request_status.csv,cycle_id,string,identifier,Original collection batch identifier; retain for provenance and repeated-route grouping.
+google_request_status.csv,window_id,string or empty,identifier,"Planned follow-up window identifier; joins collection_windows.csv. Empty for the exploratory comparison, which preceded the window protocol."
+google_request_status.csv,phase,category,,pilot and scheduled identify the main ORS series; exploratory identifies the initial Google comparison; followup identifies planned Google-ORS windows. manual is reserved for a recorded manual trigger.
+google_request_status.csv,period,category,local time window,"peak [17:30,19:30); offpeak [10:00,12:00) or [22:00,24:00); other otherwise. Endpoints are exclusive; timezone UTC+05:00."
+google_request_status.csv,timestamp_utc,datetime,ISO 8601 UTC,"Original API request start, with timezone offset."
+google_request_status.csv,timestamp_astana,datetime,ISO 8601 UTC+05:00,Request start in Astana time; original for ORS and converted from timestamp_utc for Google status.
+google_request_status.csv,route_id,string,identifier,Directed route identifier joining routes.csv; reverse directions have different identifiers.
+google_request_status.csv,provider,category,,"ors or google_demo, exactly as recorded by the collector."
+google_request_status.csv,http_code,integer or empty,HTTP status,Original HTTP response code; empty if no response code was available.
+google_request_status.csv,status,category,,"API result: ok, http_error, transport_error, or invalid_response; retained failures remain visible."
+google_ors_summary.csv,cycle_id,string,identifier,Original collection batch identifier; retain for provenance and repeated-route grouping.
+google_ors_summary.csv,window_id,string or empty,identifier,"Planned follow-up window identifier; joins collection_windows.csv. Empty for the exploratory comparison, which preceded the window protocol."
+google_ors_summary.csv,phase,category,,pilot and scheduled identify the main ORS series; exploratory identifies the initial Google comparison; followup identifies planned Google-ORS windows. manual is reserved for a recorded manual trigger.
+google_ors_summary.csv,period,category,local time window,"peak [17:30,19:30); offpeak [10:00,12:00) or [22:00,24:00); other otherwise. Endpoints are exclusive; timezone UTC+05:00."
+google_ors_summary.csv,window_start_utc,datetime or empty,ISO 8601 UTC,Inclusive planned window start; empty for the exploratory comparison.
+google_ors_summary.csv,window_end_utc,datetime or empty,ISO 8601 UTC,Exclusive planned window end; empty for the exploratory comparison.
+google_ors_summary.csv,start_utc,datetime,ISO 8601 UTC,"Original start of the aggregate comparison batch, before its first request."
+google_ors_summary.csv,end_utc,datetime,ISO 8601 UTC,Original completion time of the aggregate comparison batch.
+google_ors_summary.csv,n_attempted_pairs,integer or empty,route pairs,Number of paired Google/ORS attempts in the batch; empty for unstarted planned windows.
+google_ors_summary.csv,n_google_ok,integer or empty,requests,Google requests recorded with status ok in this batch.
+google_ors_summary.csv,n_ors_ok,integer or empty,requests,ORS requests recorded with status ok in this batch.
+google_ors_summary.csv,max_request_start_gap_s,number,seconds,Maximum absolute difference between the Google and ORS request start times across attempted pairs.
+google_ors_summary.csv,n_valid_pairs,integer or empty,route pairs,Pairs accepted by the original Google-ORS comparison; numeric aggregate statistics require at least five. Empty means no aggregate was recorded.
+google_ors_summary.csv,median_signed_difference_s,number or empty,seconds,Median of Google duration minus ORS duration over valid pairs; positive means Google estimated longer.
+google_ors_summary.csv,median_absolute_difference_s,number or empty,seconds,Median absolute Google-minus-ORS duration difference over valid pairs.
+google_ors_summary.csv,mae_s,number or empty,seconds,"Mean absolute Google-minus-ORS duration difference; measures disagreement, not error against observed journeys."
+google_ors_summary.csv,rmse_s,number or empty,seconds,Square root of mean squared Google-minus-ORS duration difference.
+google_ors_summary.csv,smape_pct,number or empty,percent,Mean of 100 * abs(Google duration - ORS duration) / ((Google duration + ORS duration) / 2).
+google_ors_summary.csv,iqr_signed_difference_s,number or empty,seconds,75th minus 25th percentile of signed Google-minus-ORS differences; inclusive linearly interpolated quartiles.
+google_ors_summary.csv,n_length_comparable,integer or empty,route pairs,"Valid pairs with 100 * abs(Google distance - ORS distance) / mean(Google distance, ORS distance) <= 5. Does not prove identical geometry."
+google_ors_summary.csv,length_comparable_pct,number or empty,percent,100 * n_length_comparable / n_valid_pairs.
+google_ors_summary.csv,completion_reason,category or empty,,"Original follow-up stop reason: all_reserved_routes_attempted, global_ors_halt, google_followup_halt, or window_or_runtime_ended. Empty for the exploratory source and unstarted windows."
+collection_windows.csv,window_id,string or empty,identifier,"Planned follow-up window identifier; joins collection_windows.csv. Empty for the exploratory comparison, which preceded the window protocol."
+collection_windows.csv,period,category,local time window,"peak [17:30,19:30); offpeak [10:00,12:00) or [22:00,24:00); other otherwise. Endpoints are exclusive; timezone UTC+05:00."
+collection_windows.csv,window_start_utc,datetime or empty,ISO 8601 UTC,Inclusive planned window start; empty for the exploratory comparison.
+collection_windows.csv,window_end_utc,datetime or empty,ISO 8601 UTC,Exclusive planned window end; empty for the exploratory comparison.
+collection_windows.csv,window_start_astana,datetime,ISO 8601 UTC+05:00,Planned inclusive window start converted to local time.
+collection_windows.csv,window_end_astana,datetime,ISO 8601 UTC+05:00,Planned exclusive window end converted to local time.
+collection_windows.csv,planned_pairs,integer,route pairs,Number of route pairs planned for this window.
+collection_windows.csv,status,category,,Status at the latest archived study timestamp: completed (all planned routes attempted); partial (stopped or incomplete); in_progress (records without aggregate before window end); missed (window elapsed without records); planned (unstarted and not elapsed).
+collection_windows.csv,actual_start_utc,datetime or empty,ISO 8601 UTC,Recorded aggregate start; earliest request start if a batch has records but no aggregate; empty for unstarted windows.
+collection_windows.csv,actual_end_utc,datetime or empty,ISO 8601 UTC,Recorded aggregate end; latest recorded request start for an unfinished batch; empty for unstarted windows.
+collection_windows.csv,n_attempted_pairs,integer or empty,route pairs,Number of paired Google/ORS attempts in the batch; empty for unstarted planned windows.
+collection_windows.csv,n_google_ok,integer or empty,requests,Google requests recorded with status ok in this batch.
+collection_windows.csv,n_ors_ok,integer or empty,requests,ORS requests recorded with status ok in this batch.
+collection_windows.csv,n_valid_pairs,integer or empty,route pairs,Pairs accepted by the original Google-ORS comparison; numeric aggregate statistics require at least five. Empty means no aggregate was recorded.
+collection_windows.csv,completion_reason,category or empty,,"Original follow-up stop reason: all_reserved_routes_attempted, global_ors_halt, google_followup_halt, or window_or_runtime_ended. Empty for the exploratory source and unstarted windows."
+selected_endpoints.csv,endpoint_id,string,identifier,Selected public endpoint identifier.
+selected_endpoints.csv,label,string,,Endpoint vicinity label used in route names.
+selected_endpoints.csv,lat,number,decimal degrees,Selected OpenStreetMap node latitude in WGS84.
+selected_endpoints.csv,lon,number,decimal degrees,Selected OpenStreetMap node longitude in WGS84.
+selected_endpoints.csv,source_url,URL,,OpenStreetMap node from which the endpoint coordinate was read.
+selected_endpoints.csv,supporting_way_url,URL,,OpenStreetMap road way supporting the endpoint selection.
+selected_endpoints.csv,osm_road_name,string,,Road name from the source OpenStreetMap tags.
+selected_endpoints.csv,osm_highway,category,OSM highway tag,Road classification recorded in OpenStreetMap.
+selected_endpoints.csv,selection_rule,string,,Recorded rule used to select the road node near the landmark or stop.
+selected_endpoints.csv,landmark_source,URL,,Public OpenStreetMap feature used as the endpoint selection hint.
+selected_endpoints.csv,distance_to_selection_hint_m,number,metres,Distance from selected road node to the original selection hint; not route distance.
+selected_endpoints.csv,caution,string,,Original endpoint limitations; locations describe road vicinities rather than verified building entrances.
+data_dictionary.csv,file,string,filename,Data file to which the documented column belongs.
+data_dictionary.csv,column,string,column or JSON path,Exact CSV column name or GeoJSON property path.
+data_dictionary.csv,type,string,,Field value type and whether an empty value is allowed.
+data_dictionary.csv,unit,string or empty,,Measurement unit or identifier convention.
+data_dictionary.csv,description,string,,"Definition, derivation, and interpretation of the field."
+ors_pilot_routes.geojson,type,string,GeoJSON type,FeatureCollection containing the twenty pilot-1 ORS route geometries.
+ors_pilot_routes.geojson,features[].type,string,GeoJSON type,Feature.
+ors_pilot_routes.geojson,features[].properties.route_id,string,identifier,Directed route identifier joining routes.csv.
+ors_pilot_routes.geojson,features[].properties.cycle_id,string,identifier,Original cycle identifier pilot-1.
+ors_pilot_routes.geojson,features[].properties.request_id,string,identifier,Original ORS request identifier joining ors_observations.csv.
+ors_pilot_routes.geojson,features[].properties.timestamp_utc,datetime,ISO 8601 UTC,Original start time of the ORS request that returned this geometry.
+ors_pilot_routes.geojson,features[].geometry.type,string,GeoJSON type,"LineString, exactly as returned by ORS."
+ors_pilot_routes.geojson,features[].geometry.coordinates,array,WGS84 decimal degrees,"Original ORS [longitude, latitude] positions in route order; geometry is from the first pilot cycle only."
