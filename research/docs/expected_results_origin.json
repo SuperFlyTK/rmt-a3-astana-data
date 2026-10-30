@@ -1,0 +1,7 @@
+{
+  "original_preregistration_commit": "b4614355903efdc800f870d2678d2416e0490f81",
+  "normalized_sha256": {
+    "docs/expected_results.md": "2d00c680330817b1fef99d4270d4edc760d2a9cb0f618f41edd56d13784aaa77",
+    "docs/expected_results.json": "1f6a83b23b2b305d7fc958ae62c5dd226375c274abc0e0d123e654e808ad1e38"
+  }
+}

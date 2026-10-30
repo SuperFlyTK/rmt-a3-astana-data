@@ -1,0 +1,109 @@
+{
+  "generated_at_utc": "2026-10-30T23:05:59.725397+00:00",
+  "source_snapshot_utc": "2026-10-25T12:30:53.556606+00:00",
+  "hash_rule": "SHA-256 after CRLF-to-LF normalization for CSV, JSON, Markdown, Python and plain text; exact bytes for binary figures.",
+  "python": "3.12.14",
+  "packages": {
+    "matplotlib": "3.11.2",
+    "numpy": "2.5.4",
+    "tzdata": "2026.6"
+  },
+  "inputs": {
+    "data/exploratory/google_request_status.csv": "8247d4ddf399dff0c29cd57efba211f58adc766e1eef589872130b5b17c87e50",
+    "data/exploratory/ors/observations.csv": "97edcf7cc38a90274aa556226eacf938d15d4ac46bb931a04c6069ef79b7ff26",
+    "data/followup/google_request_status.csv": "6578c16ee84dfce7d537b848b404d313ecf822a9a01490c4f2fb0cd690f8d711",
+    "data/followup/ors/observations.csv": "923153ca311675aabfec832ea0d40e5fa579065159dea8ae4167bd1d80f4a9e0",
+    "data/raw/2026-10-24.csv": "2f4738c1f6840d1ce7d3723098f12218dde69e9e3c4c8660eb4862cd4bea30f6",
+    "data/raw/2026-10-25.csv": "2d144d02eff0c5ae2ce253e8aece0554587716c864a747d53dc70b95f534f345",
+    "data/routes.csv": "236b48e847d473f25e9666f68e68908943a54833646073d3ff1bc756c3cbc4bd",
+    "data/sources/astana_osm_manifest.json": "cb7d6e28467d2f4bfc083184ce4886155dc1e65085490a4fd74b4a60eb32034c",
+    "data/sources/astana_overpass_query.txt": "d55ed7ae19a954586055bbc1eacc80a22b0341d1536481980247e55ef208dd19",
+    "docs/cloud_runs.json": "18b5b6f4075ee7ce53cff83f078cdfb0f49ddf3d2c675365af065bda9c567c04",
+    "docs/expected_results.json": "1f6a83b23b2b305d7fc958ae62c5dd226375c274abc0e0d123e654e808ad1e38",
+    "docs/expected_results.md": "2d00c680330817b1fef99d4270d4edc760d2a9cb0f618f41edd56d13784aaa77",
+    "docs/google_control_protocol.json": "a792114e9cb7d6ae8e6e02b53b9e7744bd7bcb2133ee0ba239eeba3119599ccd",
+    "docs/google_followup_protocol.json": "2f58b5f8471a465be179394a74d75a449f87200943c4ab301b4b94f389452587",
+    "results/google_control_benchmark.csv": "5b2ef18b62ae65e641f7e6f19e6fd9523db7ae156133151ca284ec70bf4f95df",
+    "results/google_followup_benchmark.csv": "a094be209c4adbca07231ce2a64302495de3ee78ad1d12ae9cbfa54bdda070ab"
+  },
+  "scripts": {
+    "assignment4/analyse.py": "57ed424d897e2325c7a5b4c8cd187172ae8b59ebaa3773f8f184f2f427236754",
+    "analysis/export_public_data.py": "0b2b50b85934763772a00c2be57c7304e4810a00e396463d06f38a4444c8002b",
+    "assignment4/build_report.py": "eab164ca4c468097a58e4943004a204c4d8ede3b6943a020fc0cbd8d2769b479"
+  },
+  "outputs": {
+    "assignment4/data/collection_windows.csv": "2a260222ec20ae6c6938b86fcfd4c0871372f7514de42a1de05bad8f3bb2230b",
+    "assignment4/data/data_dictionary.csv": "0e47fbe5ae852be4c6dfabe26dbe9ad53274a4f6d57e74b75d5826505301a9b3",
+    "assignment4/data/google_ors_summary.csv": "f0b6bfb9b84bfa4478f0337d796e5fc9a2e9807b2a1ceb883705332410d9f293",
+    "assignment4/data/google_request_status.csv": "382d5a8eed2414dc8ea82a1848b2618d031f213225ec637006196936a2912091",
+    "assignment4/data/ors_observations.csv": "d63a4bf2a9f5e668caef3ace075cf032a4a05ba6629101ea595cfb1390e9a916",
+    "assignment4/data/ors_pilot_routes.geojson": "61a566b4d1953ca2132725199d615a737486f37fdc865dd6ecd692ae9d0d895d",
+    "assignment4/data/ors_processed.csv": "f4f920ffefe29bb337521d32ceffa6fabceb88356a9a6b89f59143f88bcbae01",
+    "assignment4/data/README.md": "8c1e3cdb20f1853203b06d04053d69e5e00b4f39dde9a411cf794288d486da05",
+    "assignment4/data/routes.csv": "236b48e847d473f25e9666f68e68908943a54833646073d3ff1bc756c3cbc4bd",
+    "assignment4/data/selected_endpoints.csv": "e5238c8913bd66376724844b6d0024858391eccd99de1f8575b7e69bacaffc65",
+    "assignment4/tables/batch_results.csv": "f0b6bfb9b84bfa4478f0337d796e5fc9a2e9807b2a1ceb883705332410d9f293",
+    "assignment4/tables/cleaning.csv": "63b8ccf6532f1c25e110521a80632d2b3af6ea3780757e83403bba5a3fd75878",
+    "assignment4/tables/coverage.csv": "9fb23ec3f2c49e904ee7118ced3a78944bd1cb3c621c8bd60d1495d8a94a5645",
+    "assignment4/tables/expectations.csv": "fb78b14b0a6877746f1afba0a497b80ba5e6c036cb6d9c3520034ed1872bee7a",
+    "assignment4/tables/inventory.json": "e85fcd7afb4901d772bb4d2bf77444e259c01e1ee532f2cc5d20d9f262da5400",
+    "assignment4/tables/objectives.csv": "76bb3b7c55e39dc3ce7cd8601bb9d1f7e63c3903cd1befa55c5101c1df26af85",
+    "assignment4/tables/period_summary.csv": "c790fd71929cf664cf0947d08a8da824d796b1892c4ebf8db84a642f2c929c5d",
+    "assignment4/tables/period_summary.json": "be29625a1748797aad0eb38a805c75fd145dee4d73b53187e27cdb938c8db111",
+    "assignment4/tables/reported_metrics.json": "e7b8b63f076e5094de0a852718eb86a68ca85b1fd2d2f14ab95c9702048681db",
+    "assignment4/tables/route_summary.csv": "eacdc1dfdb9f21caf1d13aaec744e558eb362ee63bc1b6d9e0c545bbe79146b6",
+    "assignment4/tables/sensitivity.csv": "47d9bcbde350cb9d01f8d957b489f66d374c774b215e30fdc1920c50b1995b39",
+    "assignment4/tables/variables.csv": "cb177ea6c53bac76accd8548f2b06487a10b426a29b439d0af2de90ca080afc6",
+    "assignment4/tables/window_sensitivity.csv": "7c8ec26cff5e004a7284b16e05974a0296da9190004bdabd0d2e421b3a46aee4"
+  },
+  "figures": [
+    {
+      "file": "assignment4/figures/01_window_disagreement.png",
+      "sources": [
+        "assignment4/tables/batch_results.csv"
+      ],
+      "description": "Four recorded window medians; no pooled route-level median or uncertainty interval.",
+      "sha256": "33447d2771ce271be04145c7acb8d99a9c13026067db87e24537a90336dad34d"
+    },
+    {
+      "file": "assignment4/figures/02_period_comparison.png",
+      "sources": [
+        "assignment4/tables/period_summary.csv"
+      ],
+      "description": "Each period has two equally weighted windows; descriptive comparison only.",
+      "sha256": "4553272df880f82a3d401b2e6f344d5627908113a5ca73146bfe44952b76e6cc"
+    },
+    {
+      "file": "assignment4/figures/03_coverage.png",
+      "sources": [
+        "assignment4/tables/coverage.csv"
+      ],
+      "description": "Every ORS row is counted once; phases are kept separate.",
+      "sha256": "25258640a7d03dbde03e7031b31cdaba6bf147b0f5337ad614977e9be86aa6f9"
+    },
+    {
+      "file": "assignment4/figures/04_disagreement_metrics.png",
+      "sources": [
+        "assignment4/tables/batch_results.csv"
+      ],
+      "description": "Three distinct summaries of the same paired differences; no claim about observed journey accuracy.",
+      "sha256": "9f8f98408a46697fa4052909261cb5c5784b0ab0356fa1fe8025d3f10a206e10"
+    },
+    {
+      "file": "assignment4/figures/05_length_comparability.png",
+      "sources": [
+        "assignment4/tables/batch_results.csv"
+      ],
+      "description": "The original reference concerns TomTom-2GIS and is not retested here; equal length does not establish equal path.",
+      "sha256": "7c163645d4dc8c27756f3fec7e544093f6d6f72b3e126223e8dc33f3844e3e56"
+    },
+    {
+      "file": "assignment4/figures/06_ors_routes.png",
+      "sources": [
+        "assignment4/tables/route_summary.csv"
+      ],
+      "description": "All recorded durations and distances are identical within each route; each point is one route, not an independent request.",
+      "sha256": "cb5c7b54acab65f3dfb936aee12bd4105f9ece55e209991a53a9871f1a05a20c"
+    }
+  ]
+}

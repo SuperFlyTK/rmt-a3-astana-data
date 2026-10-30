@@ -1,0 +1,46 @@
+{
+  "current_rq": "How do Google traffic-aware travel-time estimates differ from ORS control estimates on fixed Astana routes during peak and off-peak periods?",
+  "timezone": "Asia/Almaty",
+  "windows": [
+    {
+      "id": "google-followup-20261024-peak",
+      "start_utc": "2026-10-24T12:30:00+00:00",
+      "end_utc": "2026-10-24T14:30:00+00:00",
+      "period": "peak"
+    },
+    {
+      "id": "google-followup-20261024-offpeak",
+      "start_utc": "2026-10-24T17:00:00+00:00",
+      "end_utc": "2026-10-24T19:00:00+00:00",
+      "period": "offpeak"
+    },
+    {
+      "id": "google-followup-20261025-morning",
+      "start_utc": "2026-10-25T05:00:00+00:00",
+      "end_utc": "2026-10-25T07:00:00+00:00",
+      "period": "offpeak"
+    },
+    {
+      "id": "google-followup-20261025-peak",
+      "start_utc": "2026-10-25T12:30:00+00:00",
+      "end_utc": "2026-10-25T12:40:00+00:00",
+      "period": "peak"
+    }
+  ],
+  "routes_per_window": 20,
+  "google_routing_preference": "TRAFFIC_AWARE_OPTIMAL",
+  "ors_live_traffic": false,
+  "max_pair_start_gap_seconds": 60,
+  "minimum_pair_interval_seconds": 2.1,
+  "storage": "No individual Google route times, distances or geometry retained. Publish own aggregate benchmark statistics, request status/timestamps, permitted ORS evidence, code and complete request protocol.",
+  "limitations": "Google with traffic versus ORS without live traffic conflates providers and models. This cannot isolate a causal traffic effect or measure accuracy. Google numeric aggregates cannot be independently recalculated from saved Google raw outputs; repeating the protocol observes new live values.",
+  "sources": [
+    "https://developers.google.com/maps/demo-key",
+    "https://cloud.google.com/terms/maps-platform/demo-project-terms",
+    "https://cloud.google.com/maps-platform/terms"
+  ],
+  "collection_methods": {
+    "google": "POST Routes API computeRoutes with car mode, identical fixed coordinates and traffic-aware optimal preference",
+    "ors": "POST /v2/directions/driving-car/geojson with the same fixed endpoints; no live traffic"
+  }
+}

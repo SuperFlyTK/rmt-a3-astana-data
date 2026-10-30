@@ -1,0 +1,64 @@
+{
+  "files": [
+    "README.md",
+    "collection_windows.csv",
+    "data_dictionary.csv",
+    "google_ors_summary.csv",
+    "google_request_status.csv",
+    "ors_observations.csv",
+    "ors_pilot_routes.geojson",
+    "ors_processed.csv",
+    "routes.csv",
+    "selected_endpoints.csv"
+  ],
+  "routes": 20,
+  "ors_observations": 572,
+  "ors_usable": 572,
+  "ors_duplicates": 0,
+  "google_status": 100,
+  "google_batches": 5,
+  "windows": {
+    "completed": 4
+  },
+  "snapshot_utc": "2026-10-25T12:30:53.556606+00:00",
+  "secrets_detected": 0,
+  "main_ors": 472,
+  "pilot_ors": 60,
+  "scheduled_ors": 412,
+  "exploratory_ors": 20,
+  "manual_verification_ors": 4,
+  "automatic_ors": 408,
+  "automatic_pct_original_plan": 53.125,
+  "followup_ors": 80,
+  "planned_followup_pairs": 80,
+  "actual_followup_pairs": 80,
+  "planned_scheduled_ors": 768,
+  "scheduled_pct_original_plan": 53.645833333333336,
+  "pilot_routes": 20,
+  "failed_ors": 0,
+  "main_latency_le_10": 472,
+  "all_latency_le_10": 572,
+  "raw_fields": 14,
+  "raw_cells": 8008,
+  "raw_blank_cells": 1144,
+  "required_cells": 6864,
+  "required_blank_cells": 0,
+  "main_periods": {
+    "other": 372,
+    "peak": 36,
+    "offpeak": 64
+  },
+  "all_periods": {
+    "other": 392,
+    "peak": 76,
+    "offpeak": 104
+  },
+  "source_start_utc": "2026-10-24T02:37:23.929322+00:00",
+  "source_end_utc": "2026-10-25T12:30:53.556606+00:00",
+  "weekdays": {
+    "2026-10-24": "Saturday",
+    "2026-10-25": "Sunday"
+  },
+  "unchanged_ors_routes": 20,
+  "raw_blank_pct": 14.285714285714286
+}

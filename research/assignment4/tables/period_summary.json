@@ -1,0 +1,29 @@
+{
+  "generated_at_utc": "2026-10-30T23:05:58.478096+00:00",
+  "planned_windows": 4,
+  "recorded_windows": 4,
+  "valid_windows": 4,
+  "n_valid_pairs": 80,
+  "groups": [
+    {
+      "period": "peak",
+      "planned_windows": 2,
+      "recorded_windows": 2,
+      "valid_windows": 2,
+      "n_valid_pairs": 40,
+      "median_of_window_median_absolute_differences_s": 679.775
+    },
+    {
+      "period": "offpeak",
+      "planned_windows": 2,
+      "recorded_windows": 2,
+      "valid_windows": 2,
+      "n_valid_pairs": 40,
+      "median_of_window_median_absolute_differences_s": 408.6
+    }
+  ],
+  "peak_minus_offpeak_window_median_s": 271.17499999999995,
+  "peak_to_offpeak_window_median_ratio": 1.663668624571708,
+  "inference": "not_run_aggregate_windows_do_not_recover_route_day_pairs",
+  "interpretation": "Descriptive window-level comparison only; traffic-aware Google versus non-live-traffic ORS control; no accuracy or causal claim. Original TomTom-2GIS expected results are not tested by these observations."
+}

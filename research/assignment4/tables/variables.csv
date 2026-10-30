@@ -1,0 +1,21 @@
+variable,level,unit,valid,missing,missing_pct,minimum,median,maximum,categories
+timestamp_utc,interval,,572,0,0.0,,,,
+timestamp_astana,interval,,572,0,0.0,,,,
+cycle_id,nominal,,572,0,0.0,,,,
+route_id,nominal,,572,0,0.0,,,,
+provider,nominal,,572,0,0.0,,,,ors
+duration_s,ratio,seconds,572,0,0.0,510.5,899.5,1578.8,
+duration_no_traffic_s,ratio,seconds,0,572,100.0,,,,
+distance_m,ratio,metres,572,0,0.0,4254.9,11002.0,20952.3,
+status,nominal,,572,0,0.0,,,,ok
+http_code,nominal,,572,0,0.0,,,,200
+error,nominal,,0,572,100.0,,,,
+request_id,nominal,,572,0,0.0,,,,
+latency_s,ratio,seconds,572,0,0.0,0.296,0.585,5.446,
+phase,nominal,,572,0,0.0,,,,exploratory; followup; pilot; scheduled
+period,nominal,,572,0,0.0,,,,offpeak; other; peak
+date_astana,interval,,572,0,0.0,,,,
+speed_kmh,ratio,km/h,572,0,0.0,30.005171400587656,42.57462289973564,53.80176382017638,
+usable,nominal,,572,0,0.0,,,,true
+exclusion_reason,nominal,,0,572,100.0,,,,
+duplicate_kind,nominal,,0,572,100.0,,,,

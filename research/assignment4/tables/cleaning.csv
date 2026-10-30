@@ -1,0 +1,8 @@
+operation,rule,input_rows,affected,output_rows
+Import main series,data/raw/*.csv; retain pilot and scheduled labels,472,0,472
+Add exploratory ORS,separate exploratory cycle; never count as follow-up,20,0,492
+Add follow-up ORS,four registered comparison windows,80,0,572
+Screen measurements,HTTP 200 and ok; finite positive time and distance; consistent timestamps; speed 2-200 km/h,572,0,572
+Screen duplicate identities,"exact row, phase/cycle/route/provider conflict or reused request ID",572,0,572
+Separate outside-period main rows,other is excluded only from peak/off-peak comparison,472,372,100
+Select paired-window summaries,phase=followup; registered cycle; at least five valid pairs,5,1,4

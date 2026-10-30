@@ -1,0 +1,21 @@
+route_id,name,n,min_duration_s,median_duration_s,max_duration_s,median_distance_m,distinct_duration_distance_pairs
+R01,Turan Avenue near Khan Shatyr -> Kabanbay Batyr Avenue near airport T1,29,929.8,929.8,929.8,13895.8,1
+R02,Kabanbay Batyr Avenue near airport T1 -> Turan Avenue near Khan Shatyr,29,956.4,956.4,956.4,13901.6,1
+R03,Mangilik El Avenue near EXPO exhibition centre -> Nurly Zhol railway-station bus-stop vicinity,29,801.5,801.5,801.5,11002.0,1
+R04,Nurly Zhol railway-station bus-stop vicinity -> Mangilik El Avenue near EXPO exhibition centre,29,738.9,738.9,738.9,10272.5,1
+R05,Turan Avenue near Khan Shatyr -> Saryarka Avenue central OSM road node,29,510.5,510.5,510.5,4254.9,1
+R06,Saryarka Avenue central OSM road node -> Turan Avenue near Khan Shatyr,29,510.5,510.5,510.5,4254.9,1
+R07,Mangilik El Avenue near EXPO exhibition centre -> Abay Avenue central OSM road node,29,899.5,899.5,899.5,10192.0,1
+R08,Abay Avenue central OSM road node -> Mangilik El Avenue near EXPO exhibition centre,29,875.7,875.7,875.7,9848.2,1
+R09,Bogenbay Batyr Avenue central OSM road node -> Kabanbay Batyr Avenue near airport T1,29,1505.1,1505.1,1505.1,20952.3,1
+R10,Kabanbay Batyr Avenue near airport T1 -> Bogenbay Batyr Avenue central OSM road node,29,1578.8,1578.8,1578.8,19967.9,1
+R11,Kenesary Street central OSM road node -> Syganak Street central OSM road node,29,543.0,543.0,543.0,6276.6,1
+R12,Syganak Street central OSM road node -> Kenesary Street central OSM road node,29,605.6,605.6,605.6,6453.3,1
+R13,Saryarka Avenue central OSM road node -> Nurly Zhol railway-station bus-stop vicinity,28,1132.2,1132.2,1132.2,13351.9,1
+R14,Nurly Zhol railway-station bus-stop vicinity -> Saryarka Avenue central OSM road node,28,1131.5,1131.5,1131.5,14012.8,1
+R15,Abay Avenue central OSM road node -> National EXPO Museum bus-stop vicinity,28,995.5,995.5,995.5,11971.4,1
+R16,National EXPO Museum bus-stop vicinity -> Abay Avenue central OSM road node,28,985.9,985.9,985.9,11302.7,1
+R17,Bogenbay Batyr Avenue central OSM road node -> Syganak Street central OSM road node,28,645.7,645.7,645.7,7657.8,1
+R18,Syganak Street central OSM road node -> Bogenbay Batyr Avenue central OSM road node,28,762.3,762.3,762.3,7470.1,1
+R19,Kenesary Street central OSM road node -> Nurly Zhol railway-station bus-stop vicinity,28,1060.2,1060.2,1060.2,12359.1,1
+R20,Nurly Zhol railway-station bus-stop vicinity -> Kenesary Street central OSM road node,28,1013.1,1013.1,1013.1,12158.6,1

@@ -1,0 +1,81 @@
+{
+  "abstract_words": 128,
+  "results_discussion_words": 2192,
+  "conclusion_words": 374,
+  "block_e_reliability_words": 370,
+  "results_figures": 6,
+  "results_tables": 10,
+  "rq": "How do Google traffic-aware travel-time estimates differ from ORS control estimates on fixed Astana routes during peak and off-peak periods?",
+  "original_expectation_rows": 8,
+  "table_interpretations": [
+    {
+      "number": 1,
+      "paragraphs": 1
+    },
+    {
+      "number": 2,
+      "paragraphs": 1
+    },
+    {
+      "number": 3,
+      "paragraphs": 1
+    },
+    {
+      "number": 4,
+      "paragraphs": 1
+    },
+    {
+      "number": 5,
+      "paragraphs": 1
+    },
+    {
+      "number": 6,
+      "paragraphs": 1
+    },
+    {
+      "number": 7,
+      "paragraphs": 1
+    },
+    {
+      "number": 8,
+      "paragraphs": 1
+    },
+    {
+      "number": 9,
+      "paragraphs": 1
+    },
+    {
+      "number": 10,
+      "paragraphs": 1
+    }
+  ],
+  "figure_interpretations": [
+    {
+      "number": 1,
+      "paragraphs": 1
+    },
+    {
+      "number": 2,
+      "paragraphs": 1
+    },
+    {
+      "number": 3,
+      "paragraphs": 1
+    },
+    {
+      "number": 4,
+      "paragraphs": 1
+    },
+    {
+      "number": 5,
+      "paragraphs": 1
+    },
+    {
+      "number": 6,
+      "paragraphs": 1
+    }
+  ],
+  "report": "assignment4/RMT_A4_Team_AkhanovYerdaulet_ShadiyarbekSyrym_SabyrzhanAkylbek.docx",
+  "report_sha256": "9fa932b052fed7215a146bf1c7267d007fb5e9d2061d931d688fc31618fc779d",
+  "word_count_rule": "Body paragraphs only in Results and Discussion; excludes tables, captions, headings and evidence links."
+}

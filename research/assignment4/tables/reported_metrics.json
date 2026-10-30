@@ -1,0 +1,20 @@
+{
+  "peak_summary_s": 679.775,
+  "offpeak_summary_s": 408.6,
+  "contrast_s": 271.17499999999995,
+  "ratio": 1.663668624571708,
+  "peak_summary_minutes": 11.329583333333334,
+  "offpeak_summary_minutes": 6.8100000000000005,
+  "contrast_minutes": 4.519583333333332,
+  "largest_window_median_contrast_s": 369.4499999999999,
+  "rounded_values": {
+    "peak_s": "679.78",
+    "offpeak_s": "408.60",
+    "contrast_s": "271.18",
+    "ratio": "1.664",
+    "peak_min": "11.33",
+    "offpeak_min": "6.81",
+    "contrast_min": "4.52"
+  },
+  "definitions": "Period values are medians of window median absolute differences. Contrast subtracts off-peak from peak. Ratio divides peak by off-peak. Largest contrast subtracts the smallest follow-up window median from the largest."
+}

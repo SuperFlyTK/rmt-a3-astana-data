@@ -1,0 +1,13 @@
+date_astana,phase,period,usable,n
+2026-10-24,exploratory,other,true,20
+2026-10-24,followup,offpeak,true,20
+2026-10-24,followup,peak,true,20
+2026-10-24,pilot,other,true,60
+2026-10-24,scheduled,offpeak,true,32
+2026-10-24,scheduled,other,true,68
+2026-10-24,scheduled,peak,true,32
+2026-10-25,followup,offpeak,true,20
+2026-10-25,followup,peak,true,20
+2026-10-25,scheduled,offpeak,true,32
+2026-10-25,scheduled,other,true,244
+2026-10-25,scheduled,peak,true,4
