@@ -1,198 +1,392 @@
 {
-  "state": "pending_publication",
+  "checked_at_utc": "2026-10-30T23:12:43.254037+00:00",
+  "check_method": "Unauthenticated GET; GitHub blob links checked using their exact raw-content URL; PDF links require a PDF header.",
   "total": 48,
+  "passed": 48,
   "results": [
     {
       "url": "https://arxiv.org/pdf/2602.15069",
-      "state": "pending_publication"
+      "request_url": "https://arxiv.org/pdf/2602.15069",
+      "status": 200,
+      "ok": true,
+      "final_url": "https://arxiv.org/pdf/2602.15069",
+      "expected_pdf": false
     },
     {
       "url": "https://developers.google.com/maps/documentation/routes/config_trade_offs",
-      "state": "pending_publication"
+      "request_url": "https://developers.google.com/maps/documentation/routes/config_trade_offs",
+      "status": 200,
+      "ok": true,
+      "final_url": "https://developers.google.com/maps/documentation/routes/config_trade_offs",
+      "expected_pdf": false
     },
     {
       "url": "https://eprints.whiterose.ac.uk/id/eprint/228392/1/1-s2.0-S2213624X25001452-main.pdf",
-      "state": "pending_publication"
+      "request_url": "https://eprints.whiterose.ac.uk/id/eprint/228392/1/1-s2.0-S2213624X25001452-main.pdf",
+      "status": 200,
+      "ok": true,
+      "final_url": "https://eprints.whiterose.ac.uk/id/eprint/228392/1/1-s2.0-S2213624X25001452-main.pdf",
+      "expected_pdf": true
     },
     {
       "url": "https://findingspress.org/article/143380.pdf",
-      "state": "pending_publication"
+      "request_url": "https://findingspress.org/article/143380.pdf",
+      "status": 200,
+      "ok": true,
+      "final_url": "https://findingspress.org/article/143380.pdf",
+      "expected_pdf": true
     },
     {
       "url": "https://giscience.github.io/openrouteservice/api-reference/",
-      "state": "pending_publication"
+      "request_url": "https://giscience.github.io/openrouteservice/api-reference/",
+      "status": 200,
+      "ok": true,
+      "final_url": "https://giscience.github.io/openrouteservice/api-reference/",
+      "expected_pdf": false
     },
     {
       "url": "https://github.com/SuperFlyTK/rmt-a3-astana-data/blob/main/research/analysis/export_public_data.py",
-      "state": "pending_publication"
+      "request_url": "https://raw.githubusercontent.com/SuperFlyTK/rmt-a3-astana-data/main/research/analysis/export_public_data.py",
+      "status": 200,
+      "ok": true,
+      "final_url": "https://raw.githubusercontent.com/SuperFlyTK/rmt-a3-astana-data/main/research/analysis/export_public_data.py",
+      "expected_pdf": false
     },
     {
       "url": "https://github.com/SuperFlyTK/rmt-a3-astana-data/blob/main/research/assignment4/analyse.py",
-      "state": "pending_publication"
+      "request_url": "https://raw.githubusercontent.com/SuperFlyTK/rmt-a3-astana-data/main/research/assignment4/analyse.py",
+      "status": 200,
+      "ok": true,
+      "final_url": "https://raw.githubusercontent.com/SuperFlyTK/rmt-a3-astana-data/main/research/assignment4/analyse.py",
+      "expected_pdf": false
     },
     {
       "url": "https://github.com/SuperFlyTK/rmt-a3-astana-data/blob/main/research/assignment4/data/collection_windows.csv",
-      "state": "pending_publication"
+      "request_url": "https://raw.githubusercontent.com/SuperFlyTK/rmt-a3-astana-data/main/research/assignment4/data/collection_windows.csv",
+      "status": 200,
+      "ok": true,
+      "final_url": "https://raw.githubusercontent.com/SuperFlyTK/rmt-a3-astana-data/main/research/assignment4/data/collection_windows.csv",
+      "expected_pdf": false
     },
     {
       "url": "https://github.com/SuperFlyTK/rmt-a3-astana-data/blob/main/research/assignment4/data/data_dictionary.csv",
-      "state": "pending_publication"
+      "request_url": "https://raw.githubusercontent.com/SuperFlyTK/rmt-a3-astana-data/main/research/assignment4/data/data_dictionary.csv",
+      "status": 200,
+      "ok": true,
+      "final_url": "https://raw.githubusercontent.com/SuperFlyTK/rmt-a3-astana-data/main/research/assignment4/data/data_dictionary.csv",
+      "expected_pdf": false
     },
     {
       "url": "https://github.com/SuperFlyTK/rmt-a3-astana-data/blob/main/research/assignment4/data/ors_processed.csv",
-      "state": "pending_publication"
+      "request_url": "https://raw.githubusercontent.com/SuperFlyTK/rmt-a3-astana-data/main/research/assignment4/data/ors_processed.csv",
+      "status": 200,
+      "ok": true,
+      "final_url": "https://raw.githubusercontent.com/SuperFlyTK/rmt-a3-astana-data/main/research/assignment4/data/ors_processed.csv",
+      "expected_pdf": false
     },
     {
       "url": "https://github.com/SuperFlyTK/rmt-a3-astana-data/blob/main/research/assignment4/evidence_manifest.json",
-      "state": "pending_publication"
+      "request_url": "https://raw.githubusercontent.com/SuperFlyTK/rmt-a3-astana-data/main/research/assignment4/evidence_manifest.json",
+      "status": 200,
+      "ok": true,
+      "final_url": "https://raw.githubusercontent.com/SuperFlyTK/rmt-a3-astana-data/main/research/assignment4/evidence_manifest.json",
+      "expected_pdf": false
     },
     {
       "url": "https://github.com/SuperFlyTK/rmt-a3-astana-data/blob/main/research/assignment4/requirements-used.txt",
-      "state": "pending_publication"
+      "request_url": "https://raw.githubusercontent.com/SuperFlyTK/rmt-a3-astana-data/main/research/assignment4/requirements-used.txt",
+      "status": 200,
+      "ok": true,
+      "final_url": "https://raw.githubusercontent.com/SuperFlyTK/rmt-a3-astana-data/main/research/assignment4/requirements-used.txt",
+      "expected_pdf": false
     },
     {
       "url": "https://github.com/SuperFlyTK/rmt-a3-astana-data/blob/main/research/assignment4/submission_checks.json",
-      "state": "pending_publication"
+      "request_url": "https://raw.githubusercontent.com/SuperFlyTK/rmt-a3-astana-data/main/research/assignment4/submission_checks.json",
+      "status": 200,
+      "ok": true,
+      "final_url": "https://raw.githubusercontent.com/SuperFlyTK/rmt-a3-astana-data/main/research/assignment4/submission_checks.json",
+      "expected_pdf": false
     },
     {
       "url": "https://github.com/SuperFlyTK/rmt-a3-astana-data/blob/main/research/assignment4/tables/batch_results.csv",
-      "state": "pending_publication"
+      "request_url": "https://raw.githubusercontent.com/SuperFlyTK/rmt-a3-astana-data/main/research/assignment4/tables/batch_results.csv",
+      "status": 200,
+      "ok": true,
+      "final_url": "https://raw.githubusercontent.com/SuperFlyTK/rmt-a3-astana-data/main/research/assignment4/tables/batch_results.csv",
+      "expected_pdf": false
     },
     {
       "url": "https://github.com/SuperFlyTK/rmt-a3-astana-data/blob/main/research/assignment4/tables/cleaning.csv",
-      "state": "pending_publication"
+      "request_url": "https://raw.githubusercontent.com/SuperFlyTK/rmt-a3-astana-data/main/research/assignment4/tables/cleaning.csv",
+      "status": 200,
+      "ok": true,
+      "final_url": "https://raw.githubusercontent.com/SuperFlyTK/rmt-a3-astana-data/main/research/assignment4/tables/cleaning.csv",
+      "expected_pdf": false
     },
     {
       "url": "https://github.com/SuperFlyTK/rmt-a3-astana-data/blob/main/research/assignment4/tables/coverage.csv",
-      "state": "pending_publication"
+      "request_url": "https://raw.githubusercontent.com/SuperFlyTK/rmt-a3-astana-data/main/research/assignment4/tables/coverage.csv",
+      "status": 200,
+      "ok": true,
+      "final_url": "https://raw.githubusercontent.com/SuperFlyTK/rmt-a3-astana-data/main/research/assignment4/tables/coverage.csv",
+      "expected_pdf": false
     },
     {
       "url": "https://github.com/SuperFlyTK/rmt-a3-astana-data/blob/main/research/assignment4/tables/expectations.csv",
-      "state": "pending_publication"
+      "request_url": "https://raw.githubusercontent.com/SuperFlyTK/rmt-a3-astana-data/main/research/assignment4/tables/expectations.csv",
+      "status": 200,
+      "ok": true,
+      "final_url": "https://raw.githubusercontent.com/SuperFlyTK/rmt-a3-astana-data/main/research/assignment4/tables/expectations.csv",
+      "expected_pdf": false
     },
     {
       "url": "https://github.com/SuperFlyTK/rmt-a3-astana-data/blob/main/research/assignment4/tables/inventory.json",
-      "state": "pending_publication"
+      "request_url": "https://raw.githubusercontent.com/SuperFlyTK/rmt-a3-astana-data/main/research/assignment4/tables/inventory.json",
+      "status": 200,
+      "ok": true,
+      "final_url": "https://raw.githubusercontent.com/SuperFlyTK/rmt-a3-astana-data/main/research/assignment4/tables/inventory.json",
+      "expected_pdf": false
     },
     {
       "url": "https://github.com/SuperFlyTK/rmt-a3-astana-data/blob/main/research/assignment4/tables/objectives.csv",
-      "state": "pending_publication"
+      "request_url": "https://raw.githubusercontent.com/SuperFlyTK/rmt-a3-astana-data/main/research/assignment4/tables/objectives.csv",
+      "status": 200,
+      "ok": true,
+      "final_url": "https://raw.githubusercontent.com/SuperFlyTK/rmt-a3-astana-data/main/research/assignment4/tables/objectives.csv",
+      "expected_pdf": false
     },
     {
       "url": "https://github.com/SuperFlyTK/rmt-a3-astana-data/blob/main/research/assignment4/tables/period_summary.csv",
-      "state": "pending_publication"
+      "request_url": "https://raw.githubusercontent.com/SuperFlyTK/rmt-a3-astana-data/main/research/assignment4/tables/period_summary.csv",
+      "status": 200,
+      "ok": true,
+      "final_url": "https://raw.githubusercontent.com/SuperFlyTK/rmt-a3-astana-data/main/research/assignment4/tables/period_summary.csv",
+      "expected_pdf": false
     },
     {
       "url": "https://github.com/SuperFlyTK/rmt-a3-astana-data/blob/main/research/assignment4/tables/period_summary.json",
-      "state": "pending_publication"
+      "request_url": "https://raw.githubusercontent.com/SuperFlyTK/rmt-a3-astana-data/main/research/assignment4/tables/period_summary.json",
+      "status": 200,
+      "ok": true,
+      "final_url": "https://raw.githubusercontent.com/SuperFlyTK/rmt-a3-astana-data/main/research/assignment4/tables/period_summary.json",
+      "expected_pdf": false
     },
     {
       "url": "https://github.com/SuperFlyTK/rmt-a3-astana-data/blob/main/research/assignment4/tables/reported_metrics.json",
-      "state": "pending_publication"
+      "request_url": "https://raw.githubusercontent.com/SuperFlyTK/rmt-a3-astana-data/main/research/assignment4/tables/reported_metrics.json",
+      "status": 200,
+      "ok": true,
+      "final_url": "https://raw.githubusercontent.com/SuperFlyTK/rmt-a3-astana-data/main/research/assignment4/tables/reported_metrics.json",
+      "expected_pdf": false
     },
     {
       "url": "https://github.com/SuperFlyTK/rmt-a3-astana-data/blob/main/research/assignment4/tables/route_summary.csv",
-      "state": "pending_publication"
+      "request_url": "https://raw.githubusercontent.com/SuperFlyTK/rmt-a3-astana-data/main/research/assignment4/tables/route_summary.csv",
+      "status": 200,
+      "ok": true,
+      "final_url": "https://raw.githubusercontent.com/SuperFlyTK/rmt-a3-astana-data/main/research/assignment4/tables/route_summary.csv",
+      "expected_pdf": false
     },
     {
       "url": "https://github.com/SuperFlyTK/rmt-a3-astana-data/blob/main/research/assignment4/tables/sensitivity.csv",
-      "state": "pending_publication"
+      "request_url": "https://raw.githubusercontent.com/SuperFlyTK/rmt-a3-astana-data/main/research/assignment4/tables/sensitivity.csv",
+      "status": 200,
+      "ok": true,
+      "final_url": "https://raw.githubusercontent.com/SuperFlyTK/rmt-a3-astana-data/main/research/assignment4/tables/sensitivity.csv",
+      "expected_pdf": false
     },
     {
       "url": "https://github.com/SuperFlyTK/rmt-a3-astana-data/blob/main/research/assignment4/tables/variables.csv",
-      "state": "pending_publication"
+      "request_url": "https://raw.githubusercontent.com/SuperFlyTK/rmt-a3-astana-data/main/research/assignment4/tables/variables.csv",
+      "status": 200,
+      "ok": true,
+      "final_url": "https://raw.githubusercontent.com/SuperFlyTK/rmt-a3-astana-data/main/research/assignment4/tables/variables.csv",
+      "expected_pdf": false
     },
     {
       "url": "https://github.com/SuperFlyTK/rmt-a3-astana-data/blob/main/research/assignment4/tables/window_sensitivity.csv",
-      "state": "pending_publication"
+      "request_url": "https://raw.githubusercontent.com/SuperFlyTK/rmt-a3-astana-data/main/research/assignment4/tables/window_sensitivity.csv",
+      "status": 200,
+      "ok": true,
+      "final_url": "https://raw.githubusercontent.com/SuperFlyTK/rmt-a3-astana-data/main/research/assignment4/tables/window_sensitivity.csv",
+      "expected_pdf": false
     },
     {
       "url": "https://github.com/SuperFlyTK/rmt-a3-astana-data/blob/main/research/config/study.json",
-      "state": "pending_publication"
+      "request_url": "https://raw.githubusercontent.com/SuperFlyTK/rmt-a3-astana-data/main/research/config/study.json",
+      "status": 200,
+      "ok": true,
+      "final_url": "https://raw.githubusercontent.com/SuperFlyTK/rmt-a3-astana-data/main/research/config/study.json",
+      "expected_pdf": false
     },
     {
       "url": "https://github.com/SuperFlyTK/rmt-a3-astana-data/blob/main/research/data/routes.csv",
-      "state": "pending_publication"
+      "request_url": "https://raw.githubusercontent.com/SuperFlyTK/rmt-a3-astana-data/main/research/data/routes.csv",
+      "status": 200,
+      "ok": true,
+      "final_url": "https://raw.githubusercontent.com/SuperFlyTK/rmt-a3-astana-data/main/research/data/routes.csv",
+      "expected_pdf": false
     },
     {
       "url": "https://github.com/SuperFlyTK/rmt-a3-astana-data/blob/main/research/data/sources/README.md",
-      "state": "pending_publication"
+      "request_url": "https://raw.githubusercontent.com/SuperFlyTK/rmt-a3-astana-data/main/research/data/sources/README.md",
+      "status": 200,
+      "ok": true,
+      "final_url": "https://raw.githubusercontent.com/SuperFlyTK/rmt-a3-astana-data/main/research/data/sources/README.md",
+      "expected_pdf": false
     },
     {
       "url": "https://github.com/SuperFlyTK/rmt-a3-astana-data/blob/main/research/data/sources/astana_osm_manifest.json",
-      "state": "pending_publication"
+      "request_url": "https://raw.githubusercontent.com/SuperFlyTK/rmt-a3-astana-data/main/research/data/sources/astana_osm_manifest.json",
+      "status": 200,
+      "ok": true,
+      "final_url": "https://raw.githubusercontent.com/SuperFlyTK/rmt-a3-astana-data/main/research/data/sources/astana_osm_manifest.json",
+      "expected_pdf": false
     },
     {
       "url": "https://github.com/SuperFlyTK/rmt-a3-astana-data/blob/main/research/data/sources/astana_overpass_query.txt",
-      "state": "pending_publication"
+      "request_url": "https://raw.githubusercontent.com/SuperFlyTK/rmt-a3-astana-data/main/research/data/sources/astana_overpass_query.txt",
+      "status": 200,
+      "ok": true,
+      "final_url": "https://raw.githubusercontent.com/SuperFlyTK/rmt-a3-astana-data/main/research/data/sources/astana_overpass_query.txt",
+      "expected_pdf": false
     },
     {
       "url": "https://github.com/SuperFlyTK/rmt-a3-astana-data/blob/main/research/docs/cloud_runs.json",
-      "state": "pending_publication"
+      "request_url": "https://raw.githubusercontent.com/SuperFlyTK/rmt-a3-astana-data/main/research/docs/cloud_runs.json",
+      "status": 200,
+      "ok": true,
+      "final_url": "https://raw.githubusercontent.com/SuperFlyTK/rmt-a3-astana-data/main/research/docs/cloud_runs.json",
+      "expected_pdf": false
     },
     {
       "url": "https://github.com/SuperFlyTK/rmt-a3-astana-data/blob/main/research/docs/collection_log.csv",
-      "state": "pending_publication"
+      "request_url": "https://raw.githubusercontent.com/SuperFlyTK/rmt-a3-astana-data/main/research/docs/collection_log.csv",
+      "status": 200,
+      "ok": true,
+      "final_url": "https://raw.githubusercontent.com/SuperFlyTK/rmt-a3-astana-data/main/research/docs/collection_log.csv",
+      "expected_pdf": false
     },
     {
       "url": "https://github.com/SuperFlyTK/rmt-a3-astana-data/blob/main/research/docs/expected_results.md",
-      "state": "pending_publication"
+      "request_url": "https://raw.githubusercontent.com/SuperFlyTK/rmt-a3-astana-data/main/research/docs/expected_results.md",
+      "status": 200,
+      "ok": true,
+      "final_url": "https://raw.githubusercontent.com/SuperFlyTK/rmt-a3-astana-data/main/research/docs/expected_results.md",
+      "expected_pdf": false
     },
     {
       "url": "https://github.com/SuperFlyTK/rmt-a3-astana-data/blob/main/research/docs/google_followup_protocol.json",
-      "state": "pending_publication"
+      "request_url": "https://raw.githubusercontent.com/SuperFlyTK/rmt-a3-astana-data/main/research/docs/google_followup_protocol.json",
+      "status": 200,
+      "ok": true,
+      "final_url": "https://raw.githubusercontent.com/SuperFlyTK/rmt-a3-astana-data/main/research/docs/google_followup_protocol.json",
+      "expected_pdf": false
     },
     {
       "url": "https://github.com/SuperFlyTK/rmt-a3-astana-data/blob/main/research/docs/request_parameters.json",
-      "state": "pending_publication"
+      "request_url": "https://raw.githubusercontent.com/SuperFlyTK/rmt-a3-astana-data/main/research/docs/request_parameters.json",
+      "status": 200,
+      "ok": true,
+      "final_url": "https://raw.githubusercontent.com/SuperFlyTK/rmt-a3-astana-data/main/research/docs/request_parameters.json",
+      "expected_pdf": false
     },
     {
       "url": "https://github.com/SuperFlyTK/rmt-a3-astana-data/blob/main/research/docs/submission_deadline.json",
-      "state": "pending_publication"
+      "request_url": "https://raw.githubusercontent.com/SuperFlyTK/rmt-a3-astana-data/main/research/docs/submission_deadline.json",
+      "status": 200,
+      "ok": true,
+      "final_url": "https://raw.githubusercontent.com/SuperFlyTK/rmt-a3-astana-data/main/research/docs/submission_deadline.json",
+      "expected_pdf": false
     },
     {
       "url": "https://github.com/SuperFlyTK/rmt-a3-astana-data/tree/main",
-      "state": "pending_publication"
+      "request_url": "https://github.com/SuperFlyTK/rmt-a3-astana-data/tree/main",
+      "status": 200,
+      "ok": true,
+      "final_url": "https://github.com/SuperFlyTK/rmt-a3-astana-data/tree/main",
+      "expected_pdf": false
     },
     {
       "url": "https://github.com/SuperFlyTK/rmt-a3-astana-data/tree/main/research/assignment4",
-      "state": "pending_publication"
+      "request_url": "https://github.com/SuperFlyTK/rmt-a3-astana-data/tree/main/research/assignment4",
+      "status": 200,
+      "ok": true,
+      "final_url": "https://github.com/SuperFlyTK/rmt-a3-astana-data/tree/main/research/assignment4",
+      "expected_pdf": false
     },
     {
       "url": "https://github.com/SuperFlyTK/rmt-a3-astana-data/tree/main/research/data",
-      "state": "pending_publication"
+      "request_url": "https://github.com/SuperFlyTK/rmt-a3-astana-data/tree/main/research/data",
+      "status": 200,
+      "ok": true,
+      "final_url": "https://github.com/SuperFlyTK/rmt-a3-astana-data/tree/main/research/data",
+      "expected_pdf": false
     },
     {
       "url": "https://gmd.copernicus.org/articles/15/5481/2022/gmd-15-5481-2022.pdf",
-      "state": "pending_publication"
+      "request_url": "https://gmd.copernicus.org/articles/15/5481/2022/gmd-15-5481-2022.pdf",
+      "status": 200,
+      "ok": true,
+      "final_url": "https://gmd.copernicus.org/articles/15/5481/2022/gmd-15-5481-2022.pdf",
+      "expected_pdf": true
     },
     {
       "url": "https://isprs-archives.copernicus.org/articles/XLVIII-4-W7-2023/53/2023/isprs-archives-XLVIII-4-W7-2023-53-2023.pdf",
-      "state": "pending_publication"
+      "request_url": "https://isprs-archives.copernicus.org/articles/XLVIII-4-W7-2023/53/2023/isprs-archives-XLVIII-4-W7-2023-53-2023.pdf",
+      "status": 200,
+      "ok": true,
+      "final_url": "https://isprs-archives.copernicus.org/articles/XLVIII-4-W7-2023/53/2023/isprs-archives-XLVIII-4-W7-2023-53-2023.pdf",
+      "expected_pdf": true
     },
     {
       "url": "https://luisperez.me/files/eta-prediction.pdf",
-      "state": "pending_publication"
+      "request_url": "https://luisperez.me/files/eta-prediction.pdf",
+      "status": 200,
+      "ok": true,
+      "final_url": "https://luisperez.me/files/eta-prediction.pdf",
+      "expected_pdf": true
     },
     {
       "url": "https://mdpi-res.com/d_attachment/data/data-10-00119/article_deploy/data-10-00119.pdf",
-      "state": "pending_publication"
+      "request_url": "https://mdpi-res.com/d_attachment/data/data-10-00119/article_deploy/data-10-00119.pdf",
+      "status": 200,
+      "ok": true,
+      "final_url": "https://mdpi-res.com/d_attachment/data/data-10-00119/article_deploy/data-10-00119.pdf",
+      "expected_pdf": true
     },
     {
       "url": "https://mdpi-res.com/d_attachment/sustainability/sustainability-17-08194/article_deploy/sustainability-17-08194.pdf",
-      "state": "pending_publication"
+      "request_url": "https://mdpi-res.com/d_attachment/sustainability/sustainability-17-08194/article_deploy/sustainability-17-08194.pdf",
+      "status": 200,
+      "ok": true,
+      "final_url": "https://mdpi-res.com/d_attachment/sustainability/sustainability-17-08194/article_deploy/sustainability-17-08194.pdf",
+      "expected_pdf": true
     },
     {
       "url": "https://researchmgt.monash.edu/ws/portalfiles/portal/528840794/488448406_oa.pdf",
-      "state": "pending_publication"
+      "request_url": "https://researchmgt.monash.edu/ws/portalfiles/portal/528840794/488448406_oa.pdf",
+      "status": 200,
+      "ok": true,
+      "final_url": "https://researchmgt.monash.edu/ws/portalfiles/portal/528840794/488448406_oa.pdf",
+      "expected_pdf": true
     },
     {
       "url": "https://www.nature.com/articles/s41597-025-05440-8.pdf",
-      "state": "pending_publication"
+      "request_url": "https://www.nature.com/articles/s41597-025-05440-8.pdf",
+      "status": 200,
+      "ok": true,
+      "final_url": "https://www.nature.com/articles/s41597-025-05440-8.pdf?error=cookies_not_supported&code=21f40061-e5a6-48ad-a804-cf25f8ccee61",
+      "expected_pdf": true
     },
     {
       "url": "https://www.openstreetmap.org/copyright",
-      "state": "pending_publication"
+      "request_url": "https://www.openstreetmap.org/copyright",
+      "status": 200,
+      "ok": true,
+      "final_url": "https://www.openstreetmap.org/copyright",
+      "expected_pdf": false
     }
   ]
 }
