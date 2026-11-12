@@ -106,7 +106,7 @@ def main():
     draw.line((1342, 264, 1400, 264), fill=accent, width=11)
     draw.text((1341, 286), "Example pilot path", font=label_font, fill=ink)
     draw.text((1341, 340), "Khan Shatyr\nto Airport T1", font=body_font, fill=ink, spacing=8)
-    draw.text((1341, 492), "Dots mark the roadside\nrequest coordinates.", font=body_font, fill=ink, spacing=8)
+    draw.text((1341, 492), "Public roadside points\n24–25 Oct 2026", font=body_font, fill=ink, spacing=8)
     draw.text((40, 721), "Endpoint data © OpenStreetMap contributors. Paths from the openrouteservice pilot.",
               font=small_font, fill=ink, anchor="lm")
     OUTPUT.parent.mkdir(exist_ok=True)
