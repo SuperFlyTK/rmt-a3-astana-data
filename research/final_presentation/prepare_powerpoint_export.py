@@ -49,12 +49,15 @@ def apply_portable_fonts(presentation):
             if not shape.has_text_frame or not shape.text.strip():
                 continue
             compact = index in (2, 3) and len(shape.text.split()) > 14
+            reference_heading = index >= 11 and shape.text.startswith("Earlier question ·")
             for paragraph in shape.text_frame.paragraphs:
                 if compact:
                     paragraph.line_spacing = 1.1 if paragraph.text.strip() else Pt(19)
                 elif index == 10 and shape.text.startswith(("10 weeks of shared work", "Ten-week team workflow")):
                     paragraph.line_spacing = 1.15
                 for run in paragraph.runs:
+                    if reference_heading and run.font.size and run.font.size > Pt(72):
+                        run.font.size = Pt(72)
                     name = run.font.name or ""
                     if name.startswith("Roca Two"):
                         run.font.name = "Georgia"
