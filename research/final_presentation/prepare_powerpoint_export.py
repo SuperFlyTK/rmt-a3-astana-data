@@ -52,7 +52,7 @@ def apply_portable_fonts(presentation):
             for paragraph in shape.text_frame.paragraphs:
                 if compact:
                     paragraph.line_spacing = 1.1 if paragraph.text.strip() else Pt(19)
-                elif index == 10 and shape.text.startswith("10 weeks of shared work"):
+                elif index == 10 and shape.text.startswith(("10 weeks of shared work", "Ten-week team workflow")):
                     paragraph.line_spacing = 1.15
                 for run in paragraph.runs:
                     name = run.font.name or ""
@@ -134,8 +134,8 @@ def main():
     parser.add_argument("output", type=Path)
     args = parser.parse_args()
     prs = Presentation(args.canva_export)
-    if len(prs.slides) != 11 or abs(prs.slide_width - 1920 * 9525) > 100:
-        raise ValueError("Expected the 11-slide, 1920 × 1080 Canva defence export.")
+    if len(prs.slides) < 11 or abs(prs.slide_width - 1920 * 9525) > 100:
+        raise ValueError("Expected the main 11-slide Canva defence in 1920 × 1080 format.")
     apply_portable_fonts(prs)
     replace_exported_table(prs.slides[7], ROWS_EXPECTATIONS, [415] * 4, 329, 620, source_link=True)
     replace_exported_table(prs.slides[8], ROWS_OBJECTIVES, [340, 250, 1070], 314, 677)
