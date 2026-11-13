@@ -37,7 +37,7 @@ def local_km(lon, lat):
     )
 
 
-def main():
+def draw_map(*, font="arial.ttf", bold_font="arialbd.ttf", paper="#fbfbf9"):
     endpoints = {
         row["endpoint_id"]: (float(row["lon"]), float(row["lat"]))
         for row in rows("selected_endpoints.csv")
@@ -67,14 +67,14 @@ def main():
         for given, snapped in [(start, paths[route][0]), (end, paths[route][-1])]
     ]
 
-    canvas = Image.new("RGB", (1780, 760), "#fbfbf9")
+    canvas = Image.new("RGB", (1780, 760), paper)
     draw = ImageDraw.Draw(canvas)
     ink, route_color, accent = "#18265a", "#7b8ba6", "#ac3d19"
     fonts = Path("C:/Windows/Fonts")
-    label_font = ImageFont.truetype(str(fonts / "arialbd.ttf"), 37)
-    body_font = ImageFont.truetype(str(fonts / "arial.ttf"), 38)
-    small_font = ImageFont.truetype(str(fonts / "arial.ttf"), 29)
-    count_font = ImageFont.truetype(str(fonts / "arialbd.ttf"), 59)
+    label_font = ImageFont.truetype(str(fonts / bold_font), 37)
+    body_font = ImageFont.truetype(str(fonts / font), 38)
+    small_font = ImageFont.truetype(str(fonts / font), 29)
+    count_font = ImageFont.truetype(str(fonts / bold_font), 59)
     scale = 36
 
     def to_canvas(point):
@@ -109,10 +109,14 @@ def main():
     draw.text((1341, 492), "Public roadside points\n24–25 Oct 2026", font=body_font, fill=ink, spacing=8)
     draw.text((40, 721), "Endpoint data © OpenStreetMap contributors. Paths from the openrouteservice pilot.",
               font=small_font, fill=ink, anchor="lm")
-    OUTPUT.parent.mkdir(exist_ok=True)
-    canvas.save(OUTPUT, dpi=(144, 144))
     print(f"{len(endpoints)} endpoints, {len(pairs)} reciprocal pairs, {len(paths)} archived paths.")
     print(f"Maximum pilot endpoint snap: {max(snap_distances):.1f} m.")
+    return canvas
+
+
+def main():
+    OUTPUT.parent.mkdir(exist_ok=True)
+    draw_map().save(OUTPUT, dpi=(144, 144))
     print(OUTPUT)
 
 

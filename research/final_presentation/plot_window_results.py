@@ -14,20 +14,20 @@ INK = "#18265a"
 PAPER = "#fbfbf9"
 
 
-def main():
+def draw_chart(*, font="arial.ttf", bold_font="arialbd.ttf", paper=PAPER):
     with SOURCE.open(encoding="utf-8", newline="") as stream:
         windows = [row for row in csv.DictReader(stream) if row["phase"] == "followup"]
     assert len(windows) == 4
     assert sum(int(row["n_valid_pairs"]) for row in windows) == 80
     assert [row["period"] for row in windows] == ["peak", "offpeak", "offpeak", "peak"]
 
-    canvas = Image.new("RGB", (1060, 610), PAPER)
+    canvas = Image.new("RGB", (1060, 610), paper)
     draw = ImageDraw.Draw(canvas)
     fonts = Path("C:/Windows/Fonts")
-    label = ImageFont.truetype(str(fonts / "arialbd.ttf"), 39)
-    value = ImageFont.truetype(str(fonts / "arialbd.ttf"), 43)
-    caption = ImageFont.truetype(str(fonts / "arial.ttf"), 35)
-    title = ImageFont.truetype(str(fonts / "arialbd.ttf"), 43)
+    label = ImageFont.truetype(str(fonts / bold_font), 39)
+    value = ImageFont.truetype(str(fonts / bold_font), 43)
+    caption = ImageFont.truetype(str(fonts / font), 35)
+    title = ImageFont.truetype(str(fonts / bold_font), 43)
     draw.text((32, 24), "Window-by-window results", font=title, fill=INK)
     draw.text((32, 78), "Median absolute gap (minutes)", font=caption, fill=INK)
 
@@ -49,8 +49,12 @@ def main():
         draw.text((center, 501), f"{date.day} Oct", font=label, fill=INK, anchor="mt")
         draw.text((center, 557), "Peak" if peak else "Off-peak", font=caption, fill=INK, anchor="mt")
 
+    return canvas
+
+
+def main():
     OUTPUT.parent.mkdir(exist_ok=True)
-    canvas.save(OUTPUT, dpi=(144, 144))
+    draw_chart().save(OUTPUT, dpi=(144, 144))
     print(OUTPUT)
 
 
